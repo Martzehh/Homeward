@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Zenzai Itache';
+    src: url('ZenzaiItache.eot');
+    src: url('ZenzaiItache.eot?#iefix') format('embedded-opentype'),
+        url('ZenzaiItache.woff2') format('woff2'),
+        url('ZenzaiItache.woff') format('woff'),
+        url('ZenzaiItache.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zenzai Itachi';
+    src: url('ZenzaiItachi.eot');
+    src: url('ZenzaiItachi.eot?#iefix') format('embedded-opentype'),
+        url('ZenzaiItachi.woff2') format('woff2'),
+        url('ZenzaiItachi.woff') format('woff'),
+        url('ZenzaiItachi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

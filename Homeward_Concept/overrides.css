@@ -1,0 +1,362 @@
+:root {
+    --darkblue: #000F4E;
+    --charcoal: #36454F;
+    --lightcharcoal: #B3B9BC;
+    --darkcharcoal: #1A252C;
+}
+
+html {
+    height: 200vh;
+}
+
+/* CUSTOM FONT BEGINS */
+/* CUSTOM FONT ENDS */
+
+/* NAVBAR BEGINS */
+.social-bar {
+    /* Social media icons */
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style: none;
+}
+
+.navbar {
+    font-family: 'Zenzai Itachi';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.7rem;
+    font-weight: bold;
+    opacity: 0%;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 1px 1px 3px black;
+}
+
+.brand-img-box {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-img {
+    height: 70px;
+    width: auto;
+}
+
+.navbar.scrolled {
+    opacity: 100%;
+    transition: linear 250ms;
+}
+
+.navbar-color {
+    background-color: white;
+}
+
+.nav-link {
+    color: var(--darkcharcoal)!important;
+    z-index: 2;
+    margin-top: .5rem;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    color: #C70039!important;
+    transition: ease 250ms;
+    box-shadow: 0 3px 0 #C70039;
+}
+
+.social-button {
+    color: var(--darkcharcoal)!important;
+    font-size: 1.1rem;
+}
+
+.social-button:hover {
+    color: #C70039;
+    transition: ease 250ms;
+    box-shadow: none!important;
+}
+/* NAVBAR ENDS */
+
+/* WELCOME BANNER BEGINS */
+.welcome-banner {
+    background-image: url("./imgs/Banner-imgs/banner-demo_edit.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.banner-logo {
+    width: 30vw;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+/* WELCOME BANNER ENDS */
+
+/* ABOUT BEGINS */
+.about {
+    position: relative;
+    min-height: 30rem;
+}
+
+.about-panel {
+    height: 100%;
+    width: 100%;
+}
+
+.about-artwork-kiki {
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+    left: -15%;
+    opacity: 0;
+}
+
+.about-artwork-v {
+    position: absolute;
+    background-color: transparent;
+    bottom: 0;
+    right: 0;
+}
+
+.about-artwork-kiki.scrolled {
+    opacity: 100%;
+    transition: 100ms linear;
+}
+
+.text-container {
+    position: relative;
+    max-width: 35rem;
+    color: black;
+}
+
+.about-text-title {
+    transform: translateY(20%);
+    font-family: 'Zenzai Itachi';
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.about-text-box {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.35rem;
+    margin: 1rem 0 1rem .25rem;
+    text-shadow: .5px .5px 1px black;
+}
+
+hr.style14 {
+    border: 0;
+    margin: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+/* ABOUT ENDS */
+
+/* OVERVIEW PANEL BEGINS */
+.overview {
+    position: relative;
+    min-height: 20rem;
+    width: 85%;
+}
+
+.promo {
+    transform: translateY(-10%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15rem;
+    width: 20rem;
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-image: url("./imgs/Banner-imgs/banner-demo_edit.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Zenzai Itachi';
+    font-size: 72px;
+}
+/* OVERVIEW PANEL ENDS */
+
+/* CHARACTER PANEL BEGINS */
+
+.character-sheet {
+    min-height: 30rem;
+    position: relative;
+    width: 100%;
+}
+
+.character-select-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.character-select-panel {
+    width: 100%;
+}
+
+.character-card {
+    height: 25rem;
+    width: 8rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: url("./imgs/Character-imgs/KiKi_transparent.png");
+    background-size: cover;
+    background-position: top;
+    background-color: white;
+}
+
+.character-card:hover {
+    transform: translate(-2%, -3%);
+    box-shadow: 4px 4px 1px black;
+    transition: 150ms linear;
+    z-index: 10;
+    border: 1px solid black;
+}
+
+/* CHARACTER PANEL ENDS */
+
+/* FAQ BEGINS */
+.accordion {
+}
+
+.accordion-button:focus {
+    background-color: #36454F50!important;
+    box-shadow: 0 0 0 .25rem #1A252C80!important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #36454F50!important;
+    color: var(--darkcharcoal);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-header {
+    font-family: 'Comic Neue', cursive;
+}
+
+.accordion-button {
+    font-size: 1.3rem!important;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--darkcharcoal)!important;
+}
+
+.accordion-body {
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.15rem;
+}
+
+/* FAQ ENDS */
+
+/* FOOTER BEGINS */
+footer {
+    background-color: var(--charcoal);
+    height: 20rem;
+}
+/* FOOTER ENDS */
+
+/* MISC. STYLING BEGINS */
+hr.section-break {
+    margin: 0!important;
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+}
+
+.char-test-title {
+    font-family: 'Zenzai Itache';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 128px;
+}
+
+.v {
+    text-shadow: 1px 1px 1px #00CAB1;
+}
+
+.kiki{
+    text-shadow: 1px 1px 1px #C70039;
+}
+
+.bozod {
+    text-shadow: 1px 1px 1px #B026FF;
+}
+/* MISC. STYLING ENDS */
+
+
+/* TODOS
+ * Work on banner-logo screen breaks - looks awkward right now at certain sizes
+ */
+@media only screen and (max-width: 1200px) {
+
+    .banner-logo {
+        width: 35vw;
+    }
+
+    /* Temporary solution to the odd mobile scaling happening with the about pic */
+    .about {
+        overflow-x: hidden;
+    }
+
+    .about-artwork.scrolled {
+        opacity: 50%;
+    }
+
+    .promo {
+        max-width: 17rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .banner-logo {
+        width: 70vw;
+    }
+
+    .about-artwork.scrolled {
+        opacity: 40%;
+    }
+
+    .overview {
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+
+    .promo {
+        transform: translateY(0);
+        width: 25rem;
+        margin: 1rem;
+    }
+
+    .character-card {
+        height: 17rem;
+    }
+}
