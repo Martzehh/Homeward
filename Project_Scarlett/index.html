@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./no-rightclick/no-right-click-images.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./overrides.css">
+    <title>Homeward Official</title>
+</head>
+<body>
+
+<!-- NAVBAR BEGINS -->
+<nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-light navbar-color">
+    <a class="brand-img-box" href="#">
+        <img class="brand-img" src="./imgs/logo_transparent.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-4 mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Characters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+        </ul>
+        <ul class="social-bar d-none d-lg-block">
+            <li class="social-bar-item"><a href="#" class="social-button"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="social-bar-item"><a href="" class="social-button"><i class="fab fa-discord fa-2x"></i></a></li>
+            <li class="social-bar-item"><a href="" class="social-button"><i class="fab fa-medium-m fa-2x"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- NAVBAR ENDS -->
+
+<!-- WELCOME BANNER BEGINS -->
+<div class="container-fluid welcome-banner d-flex justify-content-center p-0">
+    <div class="banner-logo mt-5">
+        <img class="banner-img" src="./imgs/logo_transparent_dropshadow.png" alt="">
+    </div>
+</div>
+<hr class="section-break">
+<!-- WELCOME BANNER ENDS -->
+
+<!-- ABOUT BEGINS -->
+<div class="container-fluid about">
+    <div id="aboutArt" class="about-artwork">
+        <img src="./imgs/KiKi_cropped.png" alt="">
+    </div>
+    <div class="row about-panel ">
+        <div class="d-none d-md-block col-md-6"></div>
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="text-container">
+                <h2 class="about-text-title">Sanctum Lost</h2>
+                <hr class="style14">
+                <div class="about-text-box">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolor dolorem ea fugit, inventore laborum libero molestiae rem sed sint. Aspernatur atque cupiditate dolorem et ex fugit iste nostrum placeat totam voluptatem! Animi consectetur cum, excepturi facere facilis nesciunt obcaecati, qui rem saepe sapiente, similique tempora tenetur vero! Id, velit?</p>
+                </div>
+                <hr class="style14">
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="section-break">
+<!-- ABOUT ENDS -->
+
+<div class="container-fluid about">
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/26db060bb9.js" crossorigin="anonymous"></script>
+<script src="./no-rightclick/no-right-click-images.js"></script>
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $("#mainNavbar");
+            var $aboutArt = $("#aboutArt");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            $aboutArt.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
+</body>
+</html>
