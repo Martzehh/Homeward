@@ -54,6 +54,7 @@ html {
 
 .nav-link {
     color: var(--darkcharcoal)!important;
+    text-shadow: .25px .25px 0 var(--lightcharcoal);
     z-index: 2;
     margin-top: .5rem;
     background-color: transparent;
@@ -79,7 +80,7 @@ html {
 
 /* WELCOME BANNER BEGINS */
 .welcome-banner {
-    background-image: url("./imgs/Banner-imgs/banner-demo_edit.jpg");
+    background-image: url("./imgs/Character-imgs/fight.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -112,7 +113,7 @@ html {
 .about-artwork-kiki {
     position: absolute;
     background-color: transparent;
-    bottom: 0;
+    bottom: -25%;
     left: -15%;
     opacity: 0;
 }
@@ -126,19 +127,20 @@ html {
 
 .about-artwork-kiki.scrolled {
     opacity: 100%;
-    transition: 100ms linear;
+    bottom: 0;
+    transition: 250ms ease-in;
 }
 
 .text-container {
     position: relative;
     max-width: 35rem;
-    color: black;
+    color: var(--darkcharcoal);
 }
 
 .about-text-title {
     transform: translateY(20%);
     font-family: 'Zenzai Itachi';
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px var(--charcoal);
     text-align: center;
     font-size: 5rem;
     margin-bottom: .5rem;
@@ -151,7 +153,7 @@ html {
     font-style: italic;
     font-size: 1.35rem;
     margin: 1rem 0 1rem .25rem;
-    text-shadow: .5px .5px 1px black;
+    text-shadow: .5px .5px 1px var(--darkcharcoal);
 }
 
 hr.style14 {
@@ -168,7 +170,7 @@ hr.style14 {
 /* OVERVIEW PANEL BEGINS */
 .overview {
     position: relative;
-    min-height: 20rem;
+    min-height: 15rem;
     width: 85%;
 }
 
@@ -180,15 +182,18 @@ hr.style14 {
     height: 15rem;
     width: 20rem;
     background-color: white;
-    box-shadow: 1px 1px 1px black;
-    border-radius: 5px;
+    box-shadow: 1px 1px 0px black;
     border: 2px solid black;
-    background-image: url("./imgs/Banner-imgs/banner-demo_edit.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Zenzai Itachi';
     font-size: 72px;
+    text-shadow: 1px 1px 0 var(--lightcharcoal);
+}
+
+.kick {
+    background-image: url("./imgs/Character-imgs/kiki_kick.jpg");
 }
 /* OVERVIEW PANEL ENDS */
 
@@ -221,6 +226,14 @@ hr.style14 {
     background-size: cover;
     background-position: top;
     background-color: white;
+}
+
+.character-name {
+    visibility: hidden;
+}
+
+.character-select-img-wide {
+    visibility: hidden;
 }
 
 .character-card:hover {
@@ -494,8 +507,91 @@ hr.style14 {
 }
 /* ROADMAP ENDS */
 
+/* SALE BEGINS */
+
+.sale {
+    height: 100%;
+    background-image: url("./imgs/Character-imgs/fight.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.sale-title {
+    text-shadow: 2px 2px 0 var(--lightcharcoal)!important;
+}
+
+.card {
+    border: 1px solid var(--darkcharcoal)!important;
+    border-radius: 0;
+    box-shadow: 1px 1px 0 var(--darkcharcoal);
+    font-family: "Comic Neue", cursive;
+    position: relative;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.card-img {
+    user-select: none!important;
+    -webkit-user-drag: none!important;
+}
+
+.card-title {
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: .5px .5px 0 black;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul.card-text {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 10px;
+    left: 0;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.fa-check {
+    color: #C70039;
+    text-shadow: .5px .5px 0 var(--darkcharcoal);
+}
+
+.fa-times {
+    text-shadow: .5px .5px 0 var(--charcoal);
+}
+
+.btn-primary {
+    background-color: var(--darkcharcoal)!important;
+    color: var(--lightcharcoal)!important;
+    border: 1px solid var(--darkcharcoal)!important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #C70039!important;
+    color: var(--darkcharcoal)!important;
+}
+
+.hidden-li {
+    opacity: 0%;
+}
+/* SALE ENDS */
+
 /* FAQ BEGINS */
-.accordion {
+.faq {
+
 }
 
 .accordion-button:focus {
@@ -534,8 +630,20 @@ hr.style14 {
 
 /* FOOTER BEGINS */
 footer {
-    background-color: var(--charcoal);
-    height: 20rem;
+    background-color: var(--darkcharcoal);
+    height: 10rem;
+}
+
+footer .row {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-copyright {
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--lightcharcoal);
 }
 /* FOOTER ENDS */
 
@@ -593,6 +701,50 @@ hr.section-break {
         max-width: 17rem;
     }
 
+    .character-card {
+        background-image: none;
+        position: relative;
+        height: 8rem;
+        width: 25rem;
+        overflow: hidden;
+    }
+
+    .character-name {
+        visibility: visible;
+        position: absolute;
+        font-family: 'Zenzai Itache';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 5.25rem;
+        bottom: 0;
+        transform: translateY(25%);
+        left: 10px;
+    }
+
+    .character-select-img-wide {
+        /* WIDE IMAGE GOES HERE */
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .kiki-title {
+        text-shadow: 1px 1px 1px #FF3131;
+    }
+
+    .vertigo-title {
+        text-shadow: 1px 1px 1px #00CAB1;
+    }
+
+    .ghesi-title {
+        text-shadow: 1px 1px 1px #B026FF;
+    }
+
+
+    .character-select-panel {
+        justify-content: center!important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -617,7 +769,4 @@ hr.section-break {
         margin: 1rem;
     }
 
-    .character-card {
-        height: 17rem;
-    }
 }
