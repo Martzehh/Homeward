@@ -6,11 +6,8 @@
 }
 
 html {
-    height: 200vh;
+    overflow-x: hidden;
 }
-
-/* CUSTOM FONT BEGINS */
-/* CUSTOM FONT ENDS */
 
 /* NAVBAR BEGINS */
 .social-bar {
@@ -219,7 +216,7 @@ hr.style14 {
 
 .character-card {
     height: 25rem;
-    width: 8rem;
+    width: 5rem;
     border: 2px solid black;
     border-radius: 5px;
     background-image: url("./imgs/Character-imgs/KiKi_transparent.png");
@@ -249,7 +246,7 @@ hr.style14 {
 /* ROADMAP BEGINS */
 
 .main-timeline {
-    position: relative
+    position: relative;
 }
 
 .main-timeline:before {
@@ -511,7 +508,7 @@ hr.style14 {
 
 .sale {
     height: 100%;
-    background-image: url("./imgs/Character-imgs/fight.jpg");
+    background-image: url("./imgs/Character-imgs/kiki_kick.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -704,8 +701,8 @@ hr.section-break {
     .character-card {
         background-image: none;
         position: relative;
-        height: 8rem;
-        width: 25rem;
+        height: 5rem;
+        width: 18rem;
         overflow: hidden;
     }
 
@@ -715,7 +712,7 @@ hr.section-break {
         font-family: 'Zenzai Itache';
         font-weight: normal;
         font-style: normal;
-        font-size: 5.25rem;
+        font-size: 4rem;
         bottom: 0;
         transform: translateY(25%);
         left: 10px;
@@ -768,5 +765,4 @@ hr.section-break {
         width: 25rem;
         margin: 1rem;
     }
-
 }
