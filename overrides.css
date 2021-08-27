@@ -96,6 +96,60 @@ html {
 }
 /* WELCOME BANNER ENDS */
 
+/* PFP BANNER BEGINS */
+
+.pfp-banner {
+    width: 100%;
+    min-height: 25rem;
+}
+
+.pfp-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid var(--darkcharcoal);
+    box-shadow: 1px 1px 0 var(--darkcharcoal);
+    background-image: url("./imgs/Character-imgs/kiki_kick.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: "Comic Neue";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3.25rem;
+    text-shadow: 2px 2px 1px white;
+}
+
+/*.pfp-title {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-direction: column;*/
+/*    font-family: "Zenzai Itache";*/
+/*    text-align: center;*/
+/*    text-shadow: 1px 1px 1px #C70039;*/
+/*}*/
+
+/*.pfp-title h2 {*/
+/*    font-size: 4.25rem;*/
+/*    transform: translateY(35%);*/
+/*}*/
+
+hr.underline {
+    margin: 0!important;
+    border: 0;
+    height: 2px;
+    width: 25%;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #36454F, #f0f0f0);
+}
+
+
+/* PFP BANNER ENDS */
+
 /* ABOUT BEGINS */
 .about {
     position: relative;
@@ -218,11 +272,62 @@ hr.style14 {
     height: 25rem;
     width: 5rem;
     border: 2px solid black;
-    border-radius: 5px;
-    background-image: url("./imgs/Character-imgs/KiKi_transparent.png");
-    background-size: cover;
-    background-position: top;
     background-color: white;
+}
+
+.ghesi-select {
+    background-image: url("./imgs/Character-imgs/character_select/ghesi_select.png");
+    background-size: cover;
+    background-position: right;
+}
+
+.kiki-select {
+    background-image: url("./imgs/Character-imgs/character_select/kiki_select.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.v-select {
+    background-image: url("./imgs/Character-imgs/character_select/v_select.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.character-showcase-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.kiki-showcase {
+    transform: translateX(30%);
+    opacity: 0;
+}
+
+.v-showcase {
+    transform: translateX(35%);
+    opacity: 0;
+}
+
+.ghesi-showcase {
+    transform: translateX(25%);
+    opacity: 0;
+}
+
+.kiki-select:hover ~ .kiki-showcase {
+    opacity: 100%;
+    transition: 200ms linear;
+}
+
+.v-select:hover ~ .v-showcase {
+    opacity: 100%;
+    transition: 200ms linear;
+}
+
+.ghesi-select:hover ~ .ghesi-showcase {
+    opacity: 100%;
+    transition: 200ms linear;
 }
 
 .character-name {
@@ -764,5 +869,10 @@ hr.section-break {
         transform: translateY(0);
         width: 25rem;
         margin: 1rem;
+    }
+
+    .pfp-demo {
+        height: 18rem;
+        width: 18rem;
     }
 }
