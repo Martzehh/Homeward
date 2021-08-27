@@ -250,6 +250,10 @@ hr.style14 {
 
 /* CHARACTER PANEL BEGINS */
 
+.showcase-wrapper {
+    overflow: hidden;
+}
+
 .character-sheet {
     min-height: 30rem;
     position: relative;
@@ -297,12 +301,13 @@ hr.style14 {
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -10;
+    z-index: -1;
 }
 
 .kiki-showcase {
     transform: translateX(30%);
     opacity: 0;
+
 }
 
 .v-showcase {
@@ -313,6 +318,60 @@ hr.style14 {
 .ghesi-showcase {
     transform: translateX(25%);
     opacity: 0;
+}
+
+.character-name {
+    position: absolute;
+    font-family: 'Zenzai Itache';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8rem;
+    bottom: 60%;
+    right: 35%;
+    transform: translateX(-50%);
+}
+
+.kiki-title {
+    opacity: 0;
+    text-shadow: 1px 1px 1px #FF3131;
+}
+
+.v-title {
+    opacity: 0;
+    text-shadow: 1px 1px 1px #00CAB1;
+    bottom: 40%;
+}
+
+.ghesi-title {
+    opacity: 0;
+    text-shadow: 1px 1px 1px #B026FF;
+}
+
+.character-select-img-wide {
+    visibility: hidden;
+}
+
+.character-card:hover {
+    transform: translate(-2%, -3%);
+    box-shadow: 4px 4px 1px black;
+    transition: 150ms linear;
+    z-index: 10;
+    border: 1px solid black;
+}
+
+.v-select:hover ~ .v-title {
+    opacity: 100%;
+    transition: 200ms linear;
+}
+
+.kiki-select:hover ~ .kiki-title {
+    opacity: 100%;
+    transition: 200ms linear;
+}
+
+.ghesi-select:hover ~ .ghesi-title {
+    opacity: 100%;
+    transition: 200ms linear;
 }
 
 .kiki-select:hover ~ .kiki-showcase {
@@ -328,22 +387,6 @@ hr.style14 {
 .ghesi-select:hover ~ .ghesi-showcase {
     opacity: 100%;
     transition: 200ms linear;
-}
-
-.character-name {
-    visibility: hidden;
-}
-
-.character-select-img-wide {
-    visibility: hidden;
-}
-
-.character-card:hover {
-    transform: translate(-2%, -3%);
-    box-shadow: 4px 4px 1px black;
-    transition: 150ms linear;
-    z-index: 10;
-    border: 1px solid black;
 }
 
 /* CHARACTER PANEL ENDS */
@@ -751,6 +794,7 @@ footer .row {
 
 /* MISC. STYLING BEGINS */
 hr.section-break {
+    z-index: -20!important;
     margin: 0!important;
     border: 0;
     height: 2px;
@@ -784,6 +828,20 @@ hr.section-break {
 /* TODOS
  * Work on banner-logo screen breaks - looks awkward right now at certain sizes
  */
+
+@media only screen and (max-width: 1400px) {
+    .character-name {
+        font-size: 8rem;
+        bottom: 60%;
+        right: 20%;
+        transform: translateX(-50%);
+    }
+
+    .kiki-title {
+        right: 35%!important;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
 
     .banner-logo {
@@ -812,12 +870,9 @@ hr.section-break {
     }
 
     .character-name {
-        visibility: visible;
-        position: absolute;
-        font-family: 'Zenzai Itache';
-        font-weight: normal;
-        font-style: normal;
+        opacity: 100%;
         font-size: 4rem;
+        position: absolute;
         bottom: 0;
         transform: translateY(25%);
         left: 10px;
@@ -831,21 +886,16 @@ hr.section-break {
         right: 0;
     }
 
-    .kiki-title {
-        text-shadow: 1px 1px 1px #FF3131;
-    }
-
-    .vertigo-title {
-        text-shadow: 1px 1px 1px #00CAB1;
-    }
-
-    .ghesi-title {
-        text-shadow: 1px 1px 1px #B026FF;
-    }
-
-
     .character-select-panel {
         justify-content: center!important;
+    }
+
+    .showcase-title {
+        visibility: hidden;
+    }
+
+    .kiki-title {
+        right: 35%!important;
     }
 }
 
