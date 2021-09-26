@@ -99,17 +99,16 @@ html {
 /* PFP BANNER BEGINS */
 
 .pfp-title {
-    font-family: 'Zenzai Itache';
+    font-family: 'Zenzai Itachi';
     font-weight: normal;
     font-style: normal;
     font-size: 1.7rem;
-    /*font-weight: bold;*/
-    font-size: 4.5rem;
+    font-weight: bold;
+    font-size: 4rem;
     /*font-family: 'Comic Neue', cursive;*/
     /*font-weight: 700;*/
     /*font-style: italic;*/
     /*font-size: 2.5rem;*/
-    text-shadow: 1px 1px 1px #00CAB1;
 }
 
 .pfp-banner {
@@ -128,25 +127,25 @@ html {
 }
 
 .pfp-kiki {
-    background-image: url("./imgs/pfp-imgs/kiki_pfp.png");
+    background-image: url("./imgs/pfp-imgs/kiki_demo_samor.png");
     background-position: center;
     background-size: cover;
 }
 
 .pfp-v {
-    background-image: url("./imgs/pfp-imgs/v_pfp.png");
+    background-image: url("./imgs/pfp-imgs/V_demo_lotus.png");
     background-position: center;
     background-size: cover;
 }
 
 .pfp-ghesi {
-    background-image: url("./imgs/pfp-imgs/ghesi_pfp.png");
+    background-image: url("./imgs/pfp-imgs/Ghesi_demo_black.png");
     background-position: center;
     background-size: cover;
 }
 
 .pfp-dorian {
-    background-image: url("./imgs/pfp-imgs/dorian_pfp.png");
+    background-image: url("./imgs/pfp-imgs/Dorian_demo_purpbl.png");
     background-position: center;
     background-size: cover;
 }
