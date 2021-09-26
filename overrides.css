@@ -98,6 +98,20 @@ html {
 
 /* PFP BANNER BEGINS */
 
+.pfp-title {
+    font-family: 'Zenzai Itache';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.7rem;
+    /*font-weight: bold;*/
+    font-size: 4.5rem;
+    /*font-family: 'Comic Neue', cursive;*/
+    /*font-weight: 700;*/
+    /*font-style: italic;*/
+    /*font-size: 2.5rem;*/
+    text-shadow: 1px 1px 1px #00CAB1;
+}
+
 .pfp-banner {
     width: 100%;
     min-height: 25rem;
@@ -107,18 +121,34 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20rem;
+    height: 30rem;
     width: 20rem;
     border: 2px solid var(--darkcharcoal);
     box-shadow: 1px 1px 0 var(--darkcharcoal);
-    background-image: url("./imgs/Character-imgs/kiki_kick.jpg");
+}
+
+.pfp-kiki {
+    background-image: url("./imgs/pfp-imgs/kiki_pfp.png");
     background-position: center;
     background-size: cover;
-    font-family: "Comic Neue";
-    font-weight: bold;
-    font-style: italic;
-    font-size: 3.25rem;
-    text-shadow: 2px 2px 1px white;
+}
+
+.pfp-v {
+    background-image: url("./imgs/pfp-imgs/v_pfp.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.pfp-ghesi {
+    background-image: url("./imgs/pfp-imgs/ghesi_pfp.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.pfp-dorian {
+    background-image: url("./imgs/pfp-imgs/dorian_pfp.png");
+    background-position: center;
+    background-size: cover;
 }
 
 /*.pfp-title {*/
@@ -167,6 +197,12 @@ hr.underline {
     bottom: -25%;
     left: -15%;
     opacity: 0;
+}
+
+.burning {
+    background-image: url("./imgs/Character-imgs/fight.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .about-artwork-v {
@@ -255,7 +291,7 @@ hr.style14 {
 }
 
 .character-sheet {
-    min-height: 30rem;
+    min-height: 35rem;
     position: relative;
     width: 100%;
 }
@@ -297,6 +333,12 @@ hr.style14 {
     background-position: center;
 }
 
+.dorian-select {
+    background-image: url("./imgs/Character-imgs/character_select/dorian_select.png");
+    background-size: cover;
+    background-position: center;
+}
+
 .character-showcase-img {
     position: absolute;
     bottom: 0;
@@ -316,6 +358,11 @@ hr.style14 {
 }
 
 .ghesi-showcase {
+    transform: translateX(25%);
+    opacity: 0;
+}
+
+.dorian-showcase {
     transform: translateX(25%);
     opacity: 0;
 }
@@ -347,6 +394,11 @@ hr.style14 {
     text-shadow: 1px 1px 1px #B026FF;
 }
 
+.dorian-title {
+    opacity: 0;
+    text-shadow: 1px 1px 1px #B026FF;
+}
+
 .character-select-img-wide {
     visibility: hidden;
 }
@@ -374,6 +426,11 @@ hr.style14 {
     transition: 200ms linear;
 }
 
+.dorian-select:hover ~ .dorian-title {
+    opacity: 100%;
+    transition: 200ms linear;
+}
+
 .kiki-select:hover ~ .kiki-showcase {
     opacity: 100%;
     transition: 200ms linear;
@@ -389,9 +446,22 @@ hr.style14 {
     transition: 200ms linear;
 }
 
+.dorian-select:hover ~ .dorian-showcase {
+    opacity: 100%;
+    transition: 200ms linear;
+}
+
 /* CHARACTER PANEL ENDS */
 
 /* ROADMAP BEGINS */
+
+.roadmap-title {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
+}
 
 .main-timeline {
     position: relative;
@@ -656,7 +726,7 @@ hr.style14 {
 
 .sale {
     height: 100%;
-    background-image: url("./imgs/Character-imgs/kiki_kick.jpg");
+    background-image: url("./imgs/Banner-imgs/v_fight_transparent.png");
     background-position: center;
     background-size: cover;
 }
@@ -736,7 +806,6 @@ ul.card-text {
 
 /* FAQ BEGINS */
 .faq {
-
 }
 
 .accordion-button:focus {
@@ -775,7 +844,7 @@ ul.card-text {
 
 /* FOOTER BEGINS */
 footer {
-    background-color: var(--darkcharcoal);
+    background-color: white;
     height: 10rem;
 }
 
@@ -842,10 +911,18 @@ hr.section-break {
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1275px) {
 
     .banner-logo {
         width: 35vw;
+    }
+
+    .about-artwork-kiki {
+        opacity: 50%!important;
+    }
+
+    .about-artwork-v {
+        opacity: 50%!important;
     }
 
     /* Temporary solution to the odd mobile scaling happening with the about pic */
@@ -867,6 +944,34 @@ hr.section-break {
         height: 5rem;
         width: 18rem;
         overflow: hidden;
+    }
+
+    .tiny-kiki {
+        background-image: url("./imgs/Character-imgs/character_select/kiki_tiny.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .tiny-v {
+        background-image: url("./imgs/Character-imgs/character_select/v_tiny.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .tiny-ghesi {
+        background-image: url("./imgs/Character-imgs/character_select/ghesi_tiny.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .tiny-dorian {
+        background-image: url("./imgs/Character-imgs/character_select/dorian_tiny.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     .character-name {
@@ -922,7 +1027,7 @@ hr.section-break {
     }
 
     .pfp-demo {
-        height: 18rem;
+        height: 27rem;
         width: 18rem;
     }
 }

@@ -23,7 +23,7 @@
 <body>
 
 <!-- NAVBAR BEGINS -->
-<nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-light navbar-color">
+<nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg navbar-light navbar-color mb-5">
     <a class="brand-img-box" href="#">
         <img class="brand-img" src="./imgs/Logo-imgs/logo_transparent.png" alt="">
     </a>
@@ -34,19 +34,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-4 me-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#">Story</a>
+                <a class="nav-link" href="#story">Story</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Overview</a>
+                <a class="nav-link" href="#overview">Overview</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Roadmap</a>
+                <a class="nav-link" href="#roadmap">Roadmap</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pre-Sale</a>
+                <a class="nav-link" href="#presale">Pre-Sale</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
             </li>
         </ul>
         <ul class="navbar-nav d-none d-lg-flex ms-auto">
@@ -55,10 +55,10 @@
                         class="fab fa-twitter fa-2x"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link social-button mx-1" href="#"><i class="fab fa-discord fa-2x"></i></a>
+                <a class="nav-link social-button mx-1" href="https://discord.gg/BjZKpZwPcd" target="_blank"><i class="fab fa-discord fa-2x"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link social-button mx-1" href="#"><i class="fab fa-medium-m fa-2x"></i></a>
+                <a class="nav-link social-button mx-1" href="https://medium.com/@HomewardNFT" target="_blank"><i class="fab fa-medium-m fa-2x"></i></a>
             </li>
         </ul>
     </div>
@@ -71,22 +71,8 @@
         <img class="banner-img" src="./imgs/Logo-imgs/logo_transparent_dropshadow.png" alt="">
     </div>
 </div>
-<hr class="section-break">
+<hr id="story" class="section-break">
 <!-- WELCOME BANNER ENDS -->
-
-<!-- PFP BANNER BEGINS -->
-<!--<div class="pfp-title">-->
-<!--    <h2>10,000 NFTs</h2>-->
-<!--    <hr class="underline">-->
-<!--</div>-->
-<div class="container-fluid pfp-banner d-flex flex-wrap justify-content-center align-items-center">
-    <div class="pfp-demo m-2"></div>
-    <div class="pfp-demo m-2"></div>
-    <div class="pfp-demo m-2"></div>
-    <div class="pfp-demo m-2"></div>
-</div>
-<hr class="section-break">
-<!-- PFP BANNER ENDS -->
 
 <!-- ABOUT BEGINS -->
 <div class="container-fluid about d-flex justify-content-center align-items-center">
@@ -116,9 +102,9 @@
 
 <!-- ABOUT CONT'D BEGINS -->
 <div class="container-fluid about d-flex justify-content-center align-items-center">
-    <!--    <div class="about-artwork-v">-->
-    <!--        <img src="./imgs/Character-imgs/Master_cropped.png" alt="">-->
-    <!--    </div>-->
+    <div class="about-artwork-v">
+        <img src="./imgs/Character-imgs/Master_cropped.png" alt="">
+    </div>
     <div class="row about-panel">
         <div class="col-12 col-lg-6  d-flex justify-content-center align-items-center">
             <div class="text-container">
@@ -129,9 +115,9 @@
                         Keepers.
                         He ventured forth into the darkness outside the city walls to make a deal with the demigod
                         Bozod. In exchange for the destruction of Sanctum, Ghesi was given powers far greater than those
-                        of the warriors that protect the city. Knowing how painful
-                        it would be for the Keepers to watch their beloved city fall, he used his forbidden powers to
-                        rip them far away from Sanctum.
+                        of the warriors that protect the city. Knowing they would do anything to protect their city,
+                        Ghesi used his forbidden powers to rip the Keepers far away from Sanctum leaving them helpless
+                        as their beloved city fell.
                     </p>
                 </div>
                 <hr class="style14">
@@ -140,16 +126,19 @@
         <div class="d-none d-lg-block col-md-6"></div>
     </div>
 </div>
-<hr class="section-break">
+<hr id="overview" class="section-break">
 <!-- ABOUT CONT'D ENDS -->
 
-<!-- OVERVIEW PANEL BEGINS -->
-<!--<div class="container overview d-flex justify-content-between align-items-start">-->
-<!--    <div class="promo kick">Collect</div>-->
-<!--    <div class="promo kick">Trade</div>-->
-<!--    <div class="promo kick">Fight</div>-->
-<!--</div>-->
-<!-- OVERVIEW PANEL ENDS -->
+<!-- PFP BANNER BEGINS -->
+<h3 class="pfp-title text-center mt-5 mb-4">3,500 Randomly Generated NFTs</h3>
+<div class="container-fluid pfp-banner d-flex flex-wrap justify-content-center align-items-center mb-5">
+    <div class="pfp-demo pfp-kiki m-2"></div>
+    <div class="pfp-demo pfp-v m-2"></div>
+    <div class="pfp-demo pfp-ghesi m-2"></div>
+    <div class="pfp-demo pfp-dorian m-2"></div>
+</div>
+<hr class="section-break">
+<!-- PFP BANNER ENDS -->
 
 <!-- CHARACTER PANEL BEGINS -->
 <!-- FIX TITLE POSITIONING!!! -->
@@ -157,7 +146,7 @@
     <h3 class="about-text-title">Characters</h3>
     <div class="row character-sheet">
         <div class="col-12 col-lg-6 character-select-panel d-flex flex-wrap justify-content-start ms-lg-5 align-items-center">
-            <div class="character-card kiki-select m-1">
+            <div class="character-card kiki-select tiny-kiki m-1">
                 <div class="character-name kiki-title "><span>Kiki</span></div>
                 <!--                <img src="./imgs/Character-imgs/KiKi_cropped.png" alt="" class="character-select-img-wide">-->
                 <!--        FIX TRANSPARENCY ISSUE!!!!        -->
@@ -165,45 +154,38 @@
             <img draggable="false" class="character-showcase-img kiki-showcase"
                  src="./imgs/Character-imgs/showcase_imgs/Kiki_showcase_dropshadow.png" alt="">
             <div class="character-name kiki-title showcase-title"><span>Kiki</span></div>
-            <div class="character-card v-select m-1">
+
+            <div class="character-card v-select tiny-v m-1">
                 <div class="character-name v-title"><span>Vertigo</span></div>
             </div>
             <img draggable="false" class="character-showcase-img v-showcase"
                  src="./imgs/Character-imgs/showcase_imgs/v_showcase.png" alt="">
             <div class="character-name v-title showcase-title"><span>Vertigo</span></div>
-            <div class="character-card ghesi-select m-1">
+
+            <div class="character-card ghesi-select tiny-ghesi m-1">
                 <div class="character-name ghesi-title"><span>Ghesi</span></div>
             </div>
             <img draggable="false" class="character-showcase-img ghesi-showcase"
                  src="./imgs/Character-imgs/showcase_imgs/ghesi_showcase.png" alt="">
             <div class="character-name ghesi-title showcase-title"><span>Ghesi</span></div>
-            <div class="character-card m-1">
-                <div class="character-name ghesi-title"><span>Ghesi</span></div>
 
+            <div class="character-card dorian-select tiny-dorian m-1">
+                <div class="character-name dorian-title"><span>Dorian</span></div>
             </div>
-            <div class="character-card m-1">
-                <div class="character-name kiki-title"><span>Kiki</span></div>
-            </div>
+            <img draggable="false" class="character-showcase-img dorian-showcase"
+                 src="./imgs/Character-imgs/showcase_imgs/dorian_showcase_dropshadow.png" alt="">
+            <div class="character-name dorian-title showcase-title"><span>Dorian</span></div>
+
         </div>
         <!--        <div class="character-select-img">-->
     </div>
 </div>
 </div>
-<hr class="section-break">
+<hr id="roadmap" class="section-break">
 <!-- CHARACTER PANEL ENDS -->
 
-<!-- SNEAK PEEK BEGINS -->
-<!-- SNEAK PEEK ENDS -->
-
-<!-- DUMMY TEXT -->
-<!--<h3 class="char-test-title text-center v">Master V</h3>-->
-<!--<h3 class="char-test-title text-center v">Fox</h3>-->
-<!--<h3 class="char-test-title text-center bozod">Ghesi</h3>-->
-<!--<h3 class="char-test-title text-center bozod">Bozod</h3>-->
-<!--<h3 class="char-test-title text-center bozod">Dorian</h3>-->
-<!-- DUMMY TEXT -->
-
 <!-- ROADMAP BEGINS -->
+<h3 class="roadmap-title text-center mt-4 mb-4">Roadmap</h3>
 <div class="container mt-5">
     <div class="main-timeline">
 
@@ -213,39 +195,17 @@
             <div class="date-content">
                 <div class="date-outer">
                                     <span class="date">
-                                            <span class="month">Sept 2021</span>
+                                            <span class="month">Oct 2021</span>
                                     <span class="year">Genesis</span>
                                     </span>
                 </div>
             </div>
             <div class="timeline-content">
-                <h5 class="title">Homeward 'Genesis' Pre-Sale</h5>
+                <h5 class="title">Homeward Founders Pre-Sale</h5>
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
-                    scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis,
-                    eu ultrices elit molestie.
-                </p>
-            </div>
-        </div>
-        <!-- end experience section-->
-
-        <!-- start experience section-->
-        <div class="timeline">
-            <div class="icon"></div>
-            <div class="date-content">
-                <div class="date-outer">
-                                    <span class="date">
-                                            <span class="month">Oct 2021</span>
-                                    <span class="year">Live</span>
-                                    </span>
-                </div>
-            </div>
-            <div class="timeline-content">
-                <h5 class="title">Minting is live!</h5>
-                <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
-                    scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis,
-                    eu ultrices elit molestie.
+                    25% Sold - Creator's Pass giveaway begins <br> 50% Sold - Aggressive community expansion begins
+                    (giveaways, marketing, preemptive listings on all NFT platforms) <br> 100% Sold -
+                    Animation studio commissioned / Game Studio Hired
                 </p>
             </div>
         </div>
@@ -258,16 +218,16 @@
                 <div class="date-outer">
                                     <span class="date">
                                             <span class="month">Nov 2021</span>
-                                    <span class="year">Drop #1</span>
+                                    <span class="year">Live</span>
                                     </span>
+
                 </div>
             </div>
             <div class="timeline-content">
-                <h5 class="title">Homeward Merch Shipped to Backers</h5>
+                <h5 class="title">Collection is live!</h5>
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque
-                    scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis,
-                    eu ultrices elit molestie.
+                    The collection is live on opensea! <br> Only purchase from the official collection found <a
+                        href="">here</a>.
                 </p>
             </div>
         </div>
@@ -279,15 +239,44 @@
             <div class="date-content">
                 <div class="date-outer">
                                     <span class="date">
-                                            <span class="month">Jan 2022</span>
-                                    <span class="year">Meta..</span>
+                                            <span class="month">0 - 50%</span>
+                                    <span class="year">Goals</span>
                                     </span>
                 </div>
             </div>
             <div class="timeline-content">
-                <h5 class="title">Don't you dare use the 'M' word!</h5>
+                <h5 class="title">Sales on Opensea</h5>
                 <p class="description">
-                    Metaverse.
+                    5% Sold - Rare giveaway <br>
+                    15% Sold - Rare giveaway <br>
+                    25% Sold - Manga series begins. <br>
+                    35% Sold - Rare giveaway <br>
+                    45% Sold - Rare giveaway <br>
+                    50% Sold - Donation to 'Save the Whales'
+                </p>
+            </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">50 - 100%</span>
+                                    <span class="year">Goals</span>
+                                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title">Sales on Opensea</h5>
+                <p class="description">
+                    55% Sold - Rare giveaway <br>
+                    65% Sold - Homeward merch store opens! <br>
+                    75% Sold - Homeward animated youtube series launches <br>
+                    85% Sold - Rare giveaway <br>
+                    100% Sold - Homeward Metaverse plans unveiled.
                 </p>
             </div>
         </div>
@@ -300,43 +289,15 @@
 <!-- PRE-SALE BEGINS -->
 
 <div class="sale">
-    <hr class="section-break">
-    <h3 class="about-text-title sale-title mt-5">Whitelist Pre-Sale</h3>
+    <hr id="presale" class="section-break">
+    <h3 class="about-text-title sale-title mt-5">Founder's Pre-Sale</h3>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                 <div class="card my-3 m-md-1 m-xl-4" style="width: 20rem;">
                     <img draggable="false" src="./imgs/Character-imgs/KiKi_cropped.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">0.01 ETH</h5>
-                        <ul class="card-text">
-                            <li>
-                                <i class="fas fa-check"></i> Whitelist
-                            </li>
-                            <li>
-                                <i class="fas fa-times"></i> Exclusive Airdrop
-                            </li>
-                            <li>
-                                <i class="fas fa-times"></i> Physical Merch Drop
-                            </li>
-                            <li>
-                                <i class="fas fa-times"></i> Design a Character
-                            </li>
-                            <li class="hidden-li">hidden</li>
-                            <li class="text-center"><a href="#">Learn more</a></li>
-                            <li class="hidden-li">hidden</li>
-                        </ul>
-                        <div class="container-fluid text-center card-btn">
-                            <a href="#" class="btn btn-primary text-center">Purchase Ticket</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
-                <div class="card my-3 m-md-1 m-xl-4" style="width: 20rem;">
-                    <img draggable="false" src="./imgs/Character-imgs/KiKi_cropped.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">0.05 ETH</h5>
+                        <h5 class="card-title">0.07 ETH - Tier 1</h5>
                         <ul class="card-text">
                             <li>
                                 <i class="fas fa-check"></i> Whitelist
@@ -360,11 +321,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                 <div class="card my-3 m-md-1 m-xl-4" style="width: 20rem;">
                     <img draggable="false" src="./imgs/Character-imgs/KiKi_cropped.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">0.10 ETH</h5>
+                        <h5 class="card-title">0.15 ETH - Tier 2</h5>
                         <ul class="card-text">
                             <li>
                                 <i class="fas fa-check"></i> Whitelist
@@ -388,11 +349,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 d-flex justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                 <div class="card my-3 m-md-1 m-xl-4" style="width: 20rem;">
                     <img draggable="false" src="./imgs/Character-imgs/KiKi_cropped.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">5 ETH Auction</h5>
+                        <h5 class="card-title">5 ETH Auction - Creator Pass</h5>
                         <ul class="card-text">
                             <li>
                                 <i class="fas fa-check"></i> Whitelist
@@ -421,7 +382,7 @@
         </div>
     </div>
 </div>
-<hr class="section-break">
+<hr id="faq" class="section-break">
 <!-- PRE-SALE ENDS -->
 
 <!-- FAQ BEGINS -->
@@ -438,11 +399,8 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                  data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
-                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    Homeward is a generative NFT PFP project with ambitious plans for an expanded metaverse. Take a look
+                    at our roadmap for more details!
                 </div>
             </div>
         </div>
@@ -450,18 +408,27 @@
             <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    What is the Whitelist sale?
+                    What is the Founders ticket sale?
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                  data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
+                    This presale is our way of rewarding unique fans and providing a stress-free minting experience.
+                    Tickets are purchased from the official Opensea collection.
+                    <br>
+                    <br>
+                    When the PFP main mint launches, all ticket holders will receive a 1:1 airdrop of their newly minted
+                    Homeward PFP (1 ticket = 1 random PFP).
+
+                    Founders supporters will all be receiving bonus Limited Edition Concept Art & Tier 2 will also be
+                    shipped Physical Merch!
+
+                    Post mint & airdrop, these tickets will continue to provide utility; they will act as ballots for
+                    exclusive Homeward concept art, PFP giveaways, etc. (Holding more tickets increases higher rarity
+                    artworks) More details to come.
+
+                    Learn more about the Founders ticket sale here.
                 </div>
             </div>
         </div>
@@ -469,18 +436,136 @@
             <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    When will the mint happen?
+                    Are there any refunds on the Founders ticket sale?
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                  data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
+                    There are no refunds on the Founders ticket sale however you are free to resell your ticket on the
+                    open market.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    What is the Creator Pass?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    There will only ever be 3 total Creator Passes in existence!
+                    <br>
+                    <br>
+                    The Creator Pass is a unique opportunity to have your character ideas immortalized in the Homeward
+                    universe AND get PAID.
+                    <br>
+                    <br>
+                    Redeem your Creator Pass ticket to **design a hero in the Homeward universe** and **earn a 25%
+                    royalty** on the first sale of each of your minted characters.
+                    2 Creators Passes will be auctioned off on Opensea; Starting bid at 5 ETH. If the auctions close for
+                    more than 10 ETH, you will **earn a 50% royalty** on the first sale of your minted characters.
+                    <br>
+                    <br>
+                    The 3rd and last Creator Pass will be given to one lucky winner in an upcoming community giveaway.
+                    Details TBD.
+                    <br>
+                    <br>
+                    Learn more about the Creator Pass ticket here
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    When will Founders tickets be available? (Pre-sale)
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The official Homeward pre-sale tickets will be available September 2021. Read the 'Founders Pre-sale' medium
+                    article for more details.
+                    <br>
+                    <br>
+                    Founders Tier 1 - 0.07 ETH
+                    <br>
+                    Founders Tier 2 - 0.15 ETH
+                    <br>
+                    Creator Pass - 5 ETH auction & giveaway
+                    <br>
+                    Launch PFP list price - 0.035 ETH
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        When is the drop? (Main event)
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The official Homeward drop is expected to take place November 2021.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        How can I join the Homeward community?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        If you found our website you’ve likely already seen one of our social profiles; check us out on
+                        Twitter, Discord, and Medium.
+
+                        The Discord community is the best environment to discuss art, story, future plans and
+                        development, - stop by and say hello 👋
+                        <br>
+                        <br>
+                        There are multiple community giveaways planned for the coming weeks and months, details will be
+                        noted in Discord #announcements
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Can you tell me a little about the team?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We are people participating in the blockchain ecosystem with the rest of you. Following crypto
+                        since the early days, it has become our daily addition since DeFi Summer 2020. We are now
+                        thrilled to participate in the new cultural movement of NFTs; merging our passions of code, art,
+                        and gaming.
+                        <br>
+                        <br>
+                        Our initial two founders have been hard at work, and have quickly expanded to include a small
+                        team of experienced and dedicated artists and Solidity developers.
+                        <br>
+                        <br>
+                        In the past year we have watched and been victim to so many rug pulls and hacks, we’re sick of
+                        the dishonesty and scams. This is not a copypasta repeat; we’re here to put our best effort
+                        forward. A community-first mindset, with a long fun roadmap ahead of us. We will show you
+                        honesty and integrity, and we will work proactively to build the best future possible for this
+                        project.
+                        <br>
+                        <br>
+                        Meet the team on Discord!
+                    </div>
                 </div>
             </div>
         </div>
@@ -489,17 +574,14 @@
 <hr class="section-break">
 <!-- FAQ ENDS -->
 
-<footer>
-    <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4 d-flex justify-content-center align-items-end">
-            <span class="footer-copyright">Copyright &copy 2021 Homeward</span>
-        </div>
-        <div class="col-4">
-
-        </div>
-    </div>
-</footer>
+        <footer>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center align-items-end">
+                    <span class="footer-copyright">Copyright &copy 2021 Homeward</span>
+                </div>
+            </div>
+        </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
