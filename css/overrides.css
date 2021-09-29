@@ -77,7 +77,7 @@ html {
 
 /* WELCOME BANNER BEGINS */
 .welcome-banner {
-    background-image: url("./imgs/Character-imgs/fight.jpg");
+    background-image: url("../imgs/Character-imgs/fight.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -127,25 +127,25 @@ html {
 }
 
 .pfp-kiki {
-    background-image: url("./imgs/pfp-imgs/kiki_demo_samor.png");
+    background-image: url("../imgs/pfp-imgs/kiki_demo_samor.png");
     background-position: center;
     background-size: cover;
 }
 
 .pfp-v {
-    background-image: url("./imgs/pfp-imgs/V_demo_lotus.png");
+    background-image: url("../imgs/pfp-imgs/V_demo_lotus.png");
     background-position: center;
     background-size: cover;
 }
 
 .pfp-ghesi {
-    background-image: url("./imgs/pfp-imgs/Ghesi_demo_black.png");
+    background-image: url("../imgs/pfp-imgs/Ghesi_demo_black.png");
     background-position: center;
     background-size: cover;
 }
 
 .pfp-dorian {
-    background-image: url("./imgs/pfp-imgs/Dorian_demo_purpbl.png");
+    background-image: url("../imgs/pfp-imgs/Dorian_demo_purpbl.png");
     background-position: center;
     background-size: cover;
 }
@@ -199,7 +199,7 @@ hr.underline {
 }
 
 .burning {
-    background-image: url("./imgs/Character-imgs/fight.jpg");
+    background-image: url("../imgs/Character-imgs/fight.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -279,7 +279,7 @@ hr.style14 {
 }
 
 .kick {
-    background-image: url("./imgs/Character-imgs/kiki_kick.jpg");
+    background-image: url("../imgs/Character-imgs/kiki_kick.jpg");
 }
 /* OVERVIEW PANEL ENDS */
 
@@ -315,25 +315,25 @@ hr.style14 {
 }
 
 .ghesi-select {
-    background-image: url("./imgs/Character-imgs/character_select/ghesi_select.png");
+    background-image: url("../imgs/Character-imgs/character_select/ghesi_select.png");
     background-size: cover;
     background-position: right;
 }
 
 .kiki-select {
-    background-image: url("./imgs/Character-imgs/character_select/kiki_select.png");
+    background-image: url("../imgs/Character-imgs/character_select/kiki_select.png");
     background-size: cover;
     background-position: center;
 }
 
 .v-select {
-    background-image: url("./imgs/Character-imgs/character_select/v_select.png");
+    background-image: url("../imgs/Character-imgs/character_select/v_select.png");
     background-size: cover;
     background-position: center;
 }
 
 .dorian-select {
-    background-image: url("./imgs/Character-imgs/character_select/dorian_select.png");
+    background-image: url("../imgs/Character-imgs/character_select/dorian_select.png");
     background-size: cover;
     background-position: center;
 }
@@ -725,7 +725,7 @@ hr.style14 {
 
 .sale {
     height: 100%;
-    background-image: url("./imgs/Banner-imgs/v_fight_transparent.png");
+    background-image: url("../imgs/Banner-imgs/v_fight_transparent.png");
     background-position: center;
     background-size: cover;
 }
@@ -946,28 +946,28 @@ hr.section-break {
     }
 
     .tiny-kiki {
-        background-image: url("./imgs/Character-imgs/character_select/kiki_tiny.png");
+        background-image: url("../imgs/Character-imgs/character_select/kiki_tiny.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
     }
 
     .tiny-v {
-        background-image: url("./imgs/Character-imgs/character_select/v_tiny.png");
+        background-image: url("../imgs/Character-imgs/character_select/v_tiny.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
     }
 
     .tiny-ghesi {
-        background-image: url("./imgs/Character-imgs/character_select/ghesi_tiny.png");
+        background-image: url("../imgs/Character-imgs/character_select/ghesi_tiny.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
     }
 
     .tiny-dorian {
-        background-image: url("./imgs/Character-imgs/character_select/dorian_tiny.png");
+        background-image: url("../imgs/Character-imgs/character_select/dorian_tiny.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
