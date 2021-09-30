@@ -67,6 +67,9 @@
 <!-- NAVBAR ENDS -->
 
 <!-- WELCOME BANNER BEGINS -->
+<!--<div class="banner-presale">-->
+<!--<p class="banner-presale-desc text-center">Homeward Founders pre-sale is now <strong>live!</strong> Purchase your tickets <a href="">here</a>.</p>-->
+<!--</div>-->
 <div class="container-fluid welcome-banner d-flex justify-content-center p-0">
     <div class="banner-logo mt-5">
         <img class="banner-img" src="./imgs/Logo-imgs/logo_transparent_dropshadow.png" alt="">
@@ -142,15 +145,12 @@
 <!-- PFP BANNER ENDS -->
 
 <!-- CHARACTER PANEL BEGINS -->
-<!-- FIX TITLE POSITIONING!!! -->
 <div class="container-fluid showcase-wrapper">
     <h3 class="about-text-title">Characters</h3>
     <div class="row character-sheet">
         <div class="col-12 col-lg-6 character-select-panel d-flex flex-wrap justify-content-start ms-lg-5 align-items-center">
             <div class="character-card kiki-select tiny-kiki m-1">
                 <div class="character-name kiki-title "><span>Kiki</span></div>
-                <!--                <img src="./imgs/Character-imgs/KiKi_cropped.png" alt="" class="character-select-img-wide">-->
-                <!--        FIX TRANSPARENCY ISSUE!!!!        -->
             </div>
             <img draggable="false" class="character-showcase-img kiki-showcase"
                  src="./imgs/Character-imgs/showcase_imgs/Kiki_showcase_dropshadow.png" alt="">
@@ -281,6 +281,26 @@
                 </p>
             </div>
         </div>
+
+        <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+                <div class="date-outer">
+                                    <span class="date">
+                                            <span class="month">Long-term</span>
+                                    <span class="year">Beyond</span>
+                                    </span>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <h5 class="title">Establishing the metaverse</h5>
+                <p class="description">
+                    We have many plans for the Homeward metaverse but we can't get too far ahead of ourselves. While we are laser focused on the short/medium term goals previously posted, know
+                    that the foundation for the Homeward metaverse has been put into place. After we've hit our previous goals we will allocate resources to do some truly incredible stuff like: push out
+                    regular Homeward manga chapters, purchase land in The Sandbox, and even one day establish a Homeward DAO!
+                </p>
+            </div>
+        </div>
         <!-- end experience section-->
     </div>
 </div>
@@ -320,7 +340,7 @@
                             <li class="hidden-li">hidden</li>
                         </ul>
                         <div class="container-fluid text-center card-btn">
-                            <a href="#" class="btn btn-primary text-center">Purchase Ticket</a>
+                            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/18404421111757484119290159054732680554421199032073568220884342872381543419105" target="_blank" class="btn btn-primary text-center">Purchase Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -351,7 +371,7 @@
                             <li class="hidden-li">hidden</li>
                         </ul>
                         <div class="container-fluid text-center card-btn">
-                            <a href="#" class="btn btn-primary text-center">Purchase Ticket</a>
+                            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/18404421111757484119290159054732680554421199032073568220884342871282031788232" target="_blank" class="btn btn-primary text-center">Purchase Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -381,7 +401,7 @@
                             <li class="hidden-li">hidden</li>
                         </ul>
                         <div class="container-fluid text-center card-btn">
-                            <a href="#" class="btn btn-primary text-center">Purchase Ticket</a>
+                            <a href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/18404421111757484119290159054732680554421199032073568220884342874580566671363" target="_blank" class="btn btn-primary text-center">Purchase Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -455,7 +475,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><!--used to say collapseThree NB UPDATE-->
                     What is the Creator Pass?
                 </button>
             </h2>
@@ -469,9 +489,9 @@
                     universe AND get PAID.
                     <br>
                     <br>
-                    Redeem your Creator Pass ticket to **design a hero in the Homeward universe** and **earn a 0.035 ETH
-                    royalty** on the first sale of each of your minted characters.
-                    2 Creators Passes will be auctioned off on Opensea; Starting bid at 5 ETH.
+                    Redeem your Creator Pass ticket to <em>design a hero in the Homeward universe</em> and <em>earn a 0.035 ETH
+                    royalty</em> on the first sale of each of your minted characters.
+                    2 Creators Passes will be auctioned on Opensea; Starting bid at 5 ETH. <!--<em> instead of **  &  removed 'off' NB UPDATE-->
                     <br>
                     <br>
                     The 3rd and last Creator Pass will be given to one lucky winner in an upcoming community giveaway. Founders tickets will act as ballots in the raffle - stack extra tickets for extra raffle ballots.
@@ -504,78 +524,79 @@
                     Launch PFP list price - 0.035 ETH
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        What are the launch details?
-                    </button>
-                </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        3,500 generative portraits will be created from a pool of over 8 heroes with over 1,000,000 possible combinations. Common, rare, and even “easter egg” rarity traits make each mint a unique mystery - what will you roll?!
+        </div><!--new </div> NB UPDATE-->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    What are the launch details?
+                </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    3,500 generative portraits will be created from a pool of over 8 heroes with over 1,000,000 possible combinations. Common, rare, and even “easter egg” rarity traits make each mint a unique mystery - what will you roll?!
 
-                        (Check our road-map for what comes after the mint)
-                    </div>
+                    (Check our road-map for what comes after the mint)
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        How can I join the Homeward community?
-                    </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        If you found our website you’ve likely already seen one of our social profiles; check us out on
-                        Twitter, Discord, and Medium.
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    How can I join the Homeward community?
+                </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    If you found our website you’ve likely already seen one of our social profiles; check us out on
+                    Twitter, Discord, and Medium.
 
-                        The Discord community is the best environment to discuss art, story, future plans and
-                        development, - stop by and say hello 👋
-                        <br>
-                        <br>
-                        There are multiple community giveaways planned for the coming weeks and months, details will be
-                        noted in Discord #announcements
-                    </div>
+                    The Discord community is the best environment to discuss art, story, future plans and
+                    development, - stop by and say hello 👋
+                    <br>
+                    <br>
+                    There are multiple community giveaways planned for the coming weeks and months, details will be
+                    noted in Discord #announcements
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingEight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        Can you tell me a little about the team?
-                    </button>
-                </h2>
-                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        We are people participating in the blockchain ecosystem with the rest of you. Following crypto
-                        since the early days, it has become our daily addition since DeFi Summer 2020. We are now
-                        thrilled to participate in the new cultural movement of NFTs; merging our passions of code, art,
-                        and gaming.
-                        <br>
-                        <br>
-                        Our initial two founders have been hard at work, and have quickly expanded to include a small
-                        team of experienced and dedicated artists and Solidity developers.
-                        <br>
-                        <br>
-                        In the past year we have watched and been victim to so many rug pulls and hacks, we’re sick of
-                        the dishonesty and scams. This is not a copypasta repeat; we’re here to put our best effort
-                        forward. A community-first mindset, with a long fun roadmap ahead of us. We will show you
-                        honesty and integrity, and we will work proactively to build the best future possible for this
-                        project.
-                        <br>
-                        <br>
-                        Meet the team on Discord!
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    Can you tell me a little about the team?
+                </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    We are people participating in the blockchain ecosystem with the rest of you. Following crypto
+                    since the early days, it has become our daily addition since DeFi Summer 2020. We are now
+                    thrilled to participate in the new cultural movement of NFTs; merging our passions of code, art,
+                    and gaming.
+                    <br>
+                    <br>
+                    Our initial two founders have been hard at work, and have quickly expanded to include a small
+                    team of experienced and dedicated artists and Solidity developers.
+                    <br>
+                    <br>
+                    In the past year we have watched and been victim to so many rug pulls and hacks, we’re sick of
+                    the dishonesty and scams. This is not a copypasta repeat; we’re here to put our best effort
+                    forward. A community-first mindset, with a long fun roadmap ahead of us. We will show you
+                    honesty and integrity, and we will work proactively to build the best future possible for this
+                    project.
+                    <br>
+                    <br>
+                    Meet the team on Discord!
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--removed </div> here (was needed above so this one was extra) & moved lines 502-572 one tab left NB UPDATE-->
 <hr class="section-break">
 <!-- FAQ ENDS -->
 
