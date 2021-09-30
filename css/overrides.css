@@ -73,10 +73,37 @@ html {
     transition: ease 250ms;
     box-shadow: none!important;
 }
+
 /* NAVBAR ENDS */
 
 /* WELCOME BANNER BEGINS */
+
+.banner-presale {
+    position: relative;
+    width: 100%;
+    height: 1.5rem;
+    background-color: var(--darkcharcoal);
+}
+
+.banner-presale-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Zenzai Itachi';
+    font-size: 5rem;
+    color: var(--darkcharcoal);
+    text-shadow: 1px 1px 1px #C70039;
+}
+
+.banner-btn {
+    width: 7rem;
+    font-family: "Comic Neue", cursive;
+    font-style: italic;
+}
+
 .welcome-banner {
+    position: relative;
     background-image: url("../imgs/Character-imgs/fight.jpg");
     background-size: cover;
     background-position: center;
@@ -94,6 +121,7 @@ html {
     -webkit-user-drag: none;
     -webkit-user-select: none;
 }
+
 /* WELCOME BANNER ENDS */
 
 /* PFP BANNER BEGINS */
@@ -898,6 +926,7 @@ hr.section-break {
  */
 
 @media only screen and (max-width: 1400px) {
+
     .character-name {
         font-size: 8rem;
         bottom: 60%;
@@ -911,6 +940,10 @@ hr.section-break {
 }
 
 @media only screen and (max-width: 1275px) {
+
+    .banner-presale-desc {
+        font-size: 3.5rem;
+    }
 
     .banner-logo {
         width: 35vw;
